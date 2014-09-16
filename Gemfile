@@ -4,11 +4,14 @@ source 'https://rubygems.org'
 # gemspec
 
 # Server requirements
-# gem 'thin' # or mongrel
+gem 'thin' # or mongrel
 # gem 'trinidad', :platform => 'jruby'
 
 # Optional JSON codec (faster performance)
 # gem 'oj'
+
+# Database
+gem 'pg'
 
 # Project requirements
 gem 'rake'
@@ -21,7 +24,8 @@ gem 'sqlite3'
 # Test requirements
 
 # Padrino Stable Gem
-gem 'padrino', '0.12.3'
+gem 'padrino',
+  :github => 'padrino/padrino-framework'
 
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'

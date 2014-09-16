@@ -6,6 +6,11 @@ module DemoProject
 
     enable :sessions
 
+    get '/' do
+      @users = User.all
+      render 'index'
+    end
+
     ##
     # Caching support.
     #
